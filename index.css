@@ -1,0 +1,113 @@
+body {
+    background-color: #0b0c10;
+}
+
+.navbar-custom .navbar-brand {
+    color:#04c8bb;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #66FCF1;
+}
+
+.navbar-custom .nav-item:hover .nav-link {
+    color: white;
+}
+
+.navbar-nav>li{
+    border-right: 1px solid #000;
+  }
+
+.one{
+    background-color: #0b0c10;
+    height: 100vh;
+    animation-name: shrink;
+    animation-delay: 6s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes shrink {
+    from {
+        height: 100vh;
+    }
+    to {
+        height: 0px;
+        overflow: hidden;
+    }
+}
+
+.myName {
+    padding-top: 15%;
+    white-space: nowrap;
+    color: white;
+    font-size: 48px;
+    animation: slidein 3s forwards, 3s fade 3s forwards; 
+
+}
+
+.description {
+    margin-top: 0px;
+    white-space: nowrap;
+    color: white;
+    font-size: 36px;
+    animation: slidein2 3s forwards, 3s fade 3s forwards; 
+
+}
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      
+    }
+  
+    to {
+      margin-left: 5%;
+    }
+  }
+
+  @keyframes slidein2 {
+    from {
+      margin-left: 150%;
+    }
+  
+    to {
+      margin-left: 10%;
+    }
+  }
+
+  @keyframes fade {
+    from {
+      color: rgba(255, 255, 255, 1);
+    }
+    to {
+      color: rgba(255, 255, 255, 0);
+    }
+  }
+
+  @keyframes fadein {
+    from {
+      color: #0b0c10;
+    }
+    to {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+.thanks{
+  color: #0b0c10;
+  font-size: 28px;
+  text-align: center;
+  animation: 4s fadein 2s forwards;
+}
+
+  .aboutMe {
+    height: 100vh;
+    background: #1f2833;
+  }
+
+  .myPic {
+    margin-top: 30px;
+  }
