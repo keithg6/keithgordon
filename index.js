@@ -1,9 +1,9 @@
 
-document.addEventListener('scroll', function (e) {
-    if ((window.pageYOffset + window.innerHeight) > (document.querySelector('#Summary > div').offsetTop)) {
-        document.getElementById('Summary').classList.add('slideUp');
-    }
-});
+// document.addEventListener('scroll', function (e) {
+//     if ((window.pageYOffset + window.innerHeight) > (document.querySelector('#Summary > div').offsetTop)) {
+//         document.getElementById('Summary').classList.add('slideUp');
+//     }
+// });
 
 // document.addEventListener('scroll', function (e) {
 //     if ((window.pageYOffset + window.innerHeight) > (document.querySelector('#Education > div').offsetTop)) {
