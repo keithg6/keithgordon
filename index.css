@@ -1,113 +1,198 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    background-color: #0b0c10;
+    background-color: white;
+}
+
+.navbar {
+  top: 0;
 }
 
 .navbar-custom .navbar-brand {
-    color:#04c8bb;
+  color:white;
 }
 
 .navbar-custom .navbar-nav .nav-link {
-    color: #66FCF1;
+  color: lightgrey;
 }
 
 .navbar-custom .nav-item:hover .nav-link {
-    color: white;
+  color: white;
 }
 
 .navbar-nav>li{
-    border-right: 1px solid #000;
-  }
+  border-right: 1px solid #000;
+}
 
-.one{
-    background-color: #0b0c10;
-    height: 100vh;
-    animation-name: shrink;
-    animation-delay: 6s;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+.myPic {
+  border-radius: 70%;
+  max-width: 300px;
+  margin: 60px;
 }
 
 
-
-@keyframes shrink {
-    from {
-        height: 100vh;
-    }
-    to {
-        height: 0px;
-        overflow: hidden;
-    }
-}
-
-.myName {
-    padding-top: 15%;
-    white-space: nowrap;
-    color: white;
-    font-size: 48px;
-    animation: slidein 3s forwards, 3s fade 3s forwards; 
-
-}
-
-.description {
-    margin-top: 0px;
-    white-space: nowrap;
-    color: white;
-    font-size: 36px;
-    animation: slidein2 3s forwards, 3s fade 3s forwards; 
-
-}
-  
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      
-    }
-  
-    to {
-      margin-left: 5%;
-    }
-  }
-
-  @keyframes slidein2 {
-    from {
-      margin-left: 150%;
-    }
-  
-    to {
-      margin-left: 10%;
-    }
-  }
-
-  @keyframes fade {
-    from {
-      color: rgba(255, 255, 255, 1);
-    }
-    to {
-      color: rgba(255, 255, 255, 0);
-    }
-  }
-
-  @keyframes fadein {
-    from {
-      color: #0b0c10;
-    }
-    to {
-      color: rgba(255, 255, 255, 1);
-    }
-  }
-
-.thanks{
-  color: #0b0c10;
-  font-size: 28px;
-  text-align: center;
-  animation: 4s fadein 2s forwards;
-}
-
-  .aboutMe {
-    height: 100vh;
-    background: #1f2833;
-  }
-
+@media only screen and (max-height: 600px) {
   .myPic {
-    margin-top: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
   }
+}
+
+.header {
+  position: relative;
+  min-height: 90vh;
+  font-family: varela;
+}
+
+
+
+.headerText {
+  opacity: 0;
+  margin: 0 auto;
+  text-align: center;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.headerTextTwo {
+  opacity: 0;
+  margin: 0 auto;
+  text-align: center;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.btn-down {
+  margin: 0 auto;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  text-align: center;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+hr {
+  width: 80%;
+  border-top: 1px solid lightgray;
+}
+
+ul {
+  font-size: 24px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
+
+.summary {
+  margin-top: 30px;
+  min-height: 100vh;
+  font: varela;
+}
+
+.cardSummary {
+  width: 18rem;
+  margin: 0 auto;  
+  margin-bottom: 10px;
+}
+
+.cardRow {
+  min-height: 100vh;
+} 
+
+.education {
+  margin-top: 30px;
+  padding: 80px 20px;
+  min-height: 100vh;
+  max-width: 100vw;
+  font: varela;
+}
+
+.experience {
+  margin-top: 30px;
+  padding: 80px 20px;
+  min-height: 100vh;
+  font: varela;
+}
+
+.experienceCard {
+  margin-bottom: 10px;
+}
+
+.projects {
+  margin-top: 30px;
+  padding: 80px 20px;
+  min-height: 100vh;
+  font: varela;
+}
+
+.contact {
+  margin-top: 30px;
+  padding: 80px 20px;
+  min-height: 100vh;
+  font: varela;
+}
+
+.sectionHeader {
+  margin-left: 20px;
+}
+
+.sectionText {
+  margin: 40px 40px 0px; 
+  font-size: 28px;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.slideUp{
+  animation-name: slideUp;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
