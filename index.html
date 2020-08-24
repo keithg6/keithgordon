@@ -18,7 +18,7 @@
 
 <body>
 
-    
+
     </div>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark navbar-custom">
         <a class="navbar-brand" href="#">Keith Gordon</a>
@@ -55,7 +55,7 @@
                 <img src="me_slim_bnw.png" class="img-fluid myPic">
             </div>
             <div class="col-12">
-                <h1 class="headerText">My name is Keith Gordon</h1>
+                <h1 class="headerText">My name is Keith Gordon.</h1>
                 <h2 class="headerTextTwo">Welcome to my website!</h2>
             </div>
             <div class="btn-down">
@@ -70,13 +70,7 @@
 
     <div id="Summary">
         <div class="container-fluid summary">
-            <div class="row justify-content-center">
-                <!-- <div class="col col-12 align-self-center text-center">
-                    <h2>I am a recently-graduated computer science student with a passion for coding.</h2>
-                    <h2>I love to learn and am constantly trying to improve my skills.</h2>
-                </div> -->
-            </div>
-            <div id="target" class="row justify-content-center cardRow target">
+            <div id="targetSlideUp" class="row justify-content-center cardRow">
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-auto">
                     <div class="card cardSummary text-center">
                         <div class="card-body">
@@ -126,13 +120,13 @@
     </div>
 
     <div id="Education">
-        <div class="container-fluid education">
+        <div class="container-fluid education" id="targetSlideLeft">
             <h1 class="sectionHeader">Education</h1>
-
             <p class="sectionText">
-                I graduated from <a href="https://www.csustan.edu/"
-                    style="color: gray; text-decoration: underline;" target="_blank">California State University Stanislaus</a> with a
-                Bachelor of Science in Computer Science in May 2020. I graduated Magna Cum Laude (GPA: 3.64) while also
+                I graduated from <a href="https://www.csustan.edu/" style="color: gray; text-decoration: underline;"
+                    target="_blank">California State University Stanislaus</a> with a
+                Bachelor of Science in Computer Science in May 2020. I graduated Magna Cum Laude (GPA: 3.64) while
+                also
                 completing the University Honors Program.
             </p>
 
@@ -194,71 +188,88 @@
     </div>
 
     <div id="Experience">
-        <div class="container-fluid experience">
+        <div class="container-fluid experience" id="targetSlideLeft">
             <h1 class="sectionHeader">Experience</h1>
             <p class="sectionText">
-                I began working in high school and continued all throughout my college career. These jobs have taught me many valuable skills I can apply to everyday life. My employment history is as follows:
+                I began working in high school and continued all throughout my college career. These jobs have taught me
+                many valuable skills I can apply to everyday life. My employment history is as follows:
             </p>
             <br>
             <div class="row justify-content-center">
-                <div class="col-8">
+                <div class="col-12 col-md-8">
                     <div class="card experienceCard text-center">
                         <div class="card-body">
                             <h5 class="card-title">Software Development Intern</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Novo Technologies</h6>
                             <h6 class="card-subtitle mb-2 text-muted">Nov 2018 - Jan 2019</h6>
                             <p class="card-text">
-                                As a software development intern my primary task was to create API's in C# to assist front-end developers. I connected my API's to the company databases and retrieved and manipulated data based on what was required on the front-end. I also used some React to assist front-end developers where possible.
+                                As a software development intern my primary task was to create API's in C# to assist
+                                front-end developers. I connected my API's to the company databases and retrieved and
+                                manipulated data based on what was required on the front-end. I also used some React to
+                                assist front-end developers where possible.
                             </p>
-                          </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-12 col-md-8">
                     <div class="card experienceCard text-center">
                         <div class="card-body">
                             <h5 class="card-title">Ditch Tender</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Patterson Irrigation District</h6>
                             <h6 class="card-subtitle mb-2 text-muted">Apr 2020 - present</h6>
                             <p class="card-text">
-                                At the irrigation district I help oversee agricultural water supply operations to ensure farmers have no issues receiving their water. I use our company's custom software to manipulate gate levels and monitor system health. I also work with a team to maintain the district's extensive canal systems.
+                                At the irrigation district I help oversee agricultural water supply operations to ensure
+                                farmers have no issues receiving their water. I use our company's custom software to
+                                manipulate gate levels and monitor system health. I also work with a team to maintain
+                                the district's extensive canal systems.
                             </p>
-                          </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-12 col-md-8">
                     <div class="card experienceCard text-center">
                         <div class="card-body">
                             <h5 class="card-title">Server</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Black Bear Diner</h6>
                             <h6 class="card-subtitle mb-2 text-muted">Aug 2019 - Mar 2020</h6>
                             <p class="card-text">
-                                As a server I was responsible for ensuring guests got the quality experience they expect when coming to the restaurant. I performed many tasks apart from serving, including bussing tables, hosting, and expediting food. This job improved my customer service skills and introduced me to working collaboratively in a larger company. 
+                                As a server I was responsible for ensuring guests got the quality experience they expect
+                                when coming to the restaurant. I performed many tasks apart from serving, including
+                                bussing tables, hosting, and expediting food. This job improved my customer service
+                                skills and introduced me to working collaboratively in a larger company.
                             </p>
-                          </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-12 col-md-8">
                     <div class="card experienceCard text-center">
                         <div class="card-body">
                             <h5 class="card-title">Assistant Manager</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Togo's Sandwiches</h6>
                             <h6 class="card-subtitle mb-2 text-muted">Aug 2016 - June 2019</h6>
                             <p class="card-text">
-                                As an assistant manager I performed managerial tasks such as managing payroll, making weekly schedules, making deposits, reporting sales, monitoring labor, and much more. I also assisted customers with any of their needs. This job taught me how to manage a small team to operate effectively. I also learned much of my customer service and conflict-resolution skills here. 
+                                As an assistant manager I performed managerial tasks such as managing payroll, making
+                                weekly schedules, making deposits, reporting sales, monitoring labor, and much more. I
+                                also assisted customers with any of their needs. This job taught me how to manage a
+                                small team to operate effectively. I also learned much of my customer service and
+                                conflict-resolution skills here.
                             </p>
-                          </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-12 col-md-8">
                     <div class="card experienceCard text-center">
                         <div class="card-body">
                             <h5 class="card-title">After School Program Assistant</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Patterson Joint Unified School District</h6>
                             <h6 class="card-subtitle mb-2 text-muted">Aug 2015- June 2016</h6>
                             <p class="card-text">
-                                As a an after school assistant I assisted program leaders with any activites they were planning. I also helped students with their homework, tutored struggling students, and supervised students during their breaks. I learned valuable professional skills here, as it was my first official job as a senior in high school.
+                                As a an after school assistant I assisted program leaders with any activites they were
+                                planning. I also helped students with their homework, tutored struggling students, and
+                                supervised students during their breaks. I learned valuable professional skills here, as
+                                it was my first official job as a senior in high school.
                             </p>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -270,16 +281,110 @@
         <div class="container-fluid projects">
             <h1 class="sectionHeader">Projects</h1>
             <p class="sectionText">
-                I have worked on multiple projects to improve my skills. My projects and code can be viewed on my <a href="https://github.com/keithg6"
-                style="color: gray; text-decoration: underline;" target="_blank">Github.</a> 
+                I have worked on multiple projects to improve my skills. My projects and code can be viewed on my <a
+                    href="https://github.com/keithg6" style="color: gray; text-decoration: underline;"
+                    target="_blank">Github.</a>
             </p>
+            <br>
+            <p class="sectionText">
+                Here are a few projects I've worked on:
+            </p>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 d-flex">
+                    <div class="card flex-fill projectCard text-center">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-decoration: underline;"><a
+                                    href="https://github.com/keithg6/keithgordon" target="_blank">This website!</a></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">HTML, CSS, JavaScript, and Bootstrap</h6>
+                            <p class="card-text">
+                                This website is built to be simple and straightforward. It is primarily powered by
+                                Bootstrap, with only a few lines of JavaScript for animations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6  d-flex">
+                    <div class="card flex-fill projectCard text-center">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-decoration: underline;"><a
+                                    href="https://github.com/keithg6/representative-record"
+                                    target="_blank">Representative Record</a></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">React, Bootstrap, and Material-UI</h6>
+                            <p class="card-text">
+                                This web app allows the user to choose a congressional body, then populates a
+                                Material-UI searchbox with updated suggestions based on what the user is typing. Once
+                                the user selects a representative, the app retrieves data from the ProPublica Congress
+                                API to display information such as total votes, votes missed, and the percent of time
+                                they voted along party lines for each of their terms.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6  d-flex">
+                    <div class="card flex-fill projectCard text-center">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-decoration: underline;"><a
+                                    href="https://github.com/DHalland/reading-tracker" target="_blank">Reading
+                                    Tracker</a></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">React, Express, Node, MongoDb, Bootstrap</h6>
+                            <p class="card-text">
+                                This web app served to help a friend and I learn the MERN stack. We wanted to use this
+                                project to learn how to build a full stack application in JavaScript, as well as learn
+                                to implement authentication. This app allows users to register, sign in, create entries,
+                                and view previous entries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6  d-flex">
+                    <div class="card flex-fill projectCard text-center">
+                        <div class="card-body">
+                            <h5 class="card-title" style="text-decoration: underline;"><a
+                                    href="https://github.com/DHalland/countries" target="_blank">Country Information</a>
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-muted">React</h6>
+                            <p class="card-text">
+                                This web app was built by a friend and I primarily to practice design. This web app
+                                allows a user to enter a country name, which then retrieves data from the REST Countries
+                                API, and displays information such as capitol, population, region, languages, etc. The
+                                app also retrieves two different backgrounds from the Unsplash API to style the page
+                                based on the country currently being displayed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <hr>
     </div>
 
     <div id="Contact">
         <div class="container-fluid contact">
-            <h1 class="sectionHeader">Contact</h1>
+            <p>Let's get in touch!</p>
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-4 text-center">
+                    <span style="font-size: 3em; color: white;">
+                        <a href="https://www.linkedin.com/in/keith-gordon-cs/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </span>
+                    <br>
+                    <a href="https://www.linkedin.com/in/keith-gordon-cs/" target="_blank">LinkedIn</a>
+                </div>
+                <div class="col-6 col-md-4 text-center">
+                    <span style="font-size: 3em; color: white;">
+                        <i class="fas fa-phone"></i>
+                    </span>
+                    <br>
+                    <p>209.620.7944</p>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <span style="font-size: 3em; color: white;">
+                        <a href="mailto: keithgordoncs@gmail.com"><i class="fas fa-envelope-square"></i></a>
+                    </span>
+                    <br>
+                    <a href="mailto: keithgordoncs@gmail.com">keithgordoncs@gmail.com</a>
+                </div>
+            </div>
         </div>
     </div>
 
